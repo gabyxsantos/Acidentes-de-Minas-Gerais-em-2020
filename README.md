@@ -52,7 +52,6 @@ A análise foi estruturada para contar uma história, partindo de uma visão mac
 ├── Acidentes_2020.xlsx     # O arquivo de dados brutos utilizado na análise.
 ├── EstatMg.ipynb           # O Jupyter Notebook contendo todo o código, análises e conclusões.
 ├── README.md               # Este arquivo, explicando o projeto.
-└── (Opcional) mapa_acidentes_mg_2020.html # O arquivo do mapa interativo gerado pelo Folium.
 ```
 
 ## 💻 Como Executar o Projeto
