@@ -4,7 +4,7 @@
 
 Este repositório contém uma análise de dados completa sobre os acidentes ocorridos nas rodovias federais de Minas Gerais em 2020. O projeto foi desenvolvido como um estudo de caso para o processo seletivo da EstatMG, a empresa júnior de Estatística da Universidade Federal de Minas Gerais.
 
-O objetivo foi simular um desafio de consultoria real, abordando um problema complexo e transformando dados brutos em insights estratégicos. A análise demonstra habilidades em limpeza de dados, visualização (incluindo geoespacial e interativa), aplicação de testes estatísticos (Qui-Quadrado, Kruskal-Wallis) e interpretação de resultados para gerar recomendações acionáveis.
+O objetivo foi simular um desafio de consultoria real, abordando um problema complexo e transformando dados brutos em insights estratégicos. A análise demonstra habilidades em limpeza de dados, visualização (incluindo geoespacial e interativa), aplicação de testes estatísticos (Qui-Quadrado, ANOVA e Post-Hoc de Tukey ) e interpretação de resultados para gerar recomendações acionáveis.
 
 ## 🎯 Objetivo do Cliente
 
@@ -17,7 +17,7 @@ O conjunto de dados utilizado foi o arquivo `Acidentes_2020.xlsx`, contendo regi
 
 ## 🛠️ Ferramentas e Bibliotecas Utilizadas
 
-* **Linguagem:** Python 3
+* **Linguagem:** Python 
 * **Bibliotecas Principais:**
     * **Pandas:** Para manipulação e limpeza dos dados.
     * **Matplotlib & Seaborn:** Para a criação de gráficos estáticos e visualizações de dados.
@@ -36,7 +36,7 @@ A análise foi estruturada para contar uma história, partindo de uma visão mac
 
 ### 2. Análise Temporal: Quando os Riscos Aumentam?
 * A distribuição mensal de acidentes em 2020 foi **fortemente impactada pela pandemia de COVID-19**, com uma queda brusca durante o lockdown inicial (Março-Maio) e picos no segundo semestre, associados à flexibilização das restrições e feriados.
-* Foi identificado um **aumento significativo no volume de acidentes nos fins de semana** (Sexta, Sábado e Domingo). A relevância dessa diferença foi validada estatisticamente através do **Teste de Kruskal-Wallis (p < 0.05)**.
+* Foi identificado um **aumento significativo no volume de acidentes nos fins de semana** (Sexta, Sábado e Domingo). A relevância dessa diferença foi validada estatisticamente através do **Teste ANOVA e do Teste Post-Hoc de Tukey**.
 
 ### 3. Fatores de Risco e Associações: Por que os Acidentes Ocorrem?
 * **Condição Meteorológica vs. Tipo de Acidente:** Através do **Teste Qui-Quadrado (p ≈ 0)**, foi comprovado que existe uma associação estatisticamente significativa entre o tempo e o tipo de acidente. Um heatmap normalizado mostrou que, embora a maioria dos acidentes ocorra com céu claro, a **proporção** de acidentes como "Saída de Pista" aumenta drasticamente sob chuva.
